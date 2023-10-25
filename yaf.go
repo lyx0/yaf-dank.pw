@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/lyx0/yaf/exifscrubber"
-	"github.com/lyx0/yaf/fileexpiration"
+	"github.com/lyx0/yaf-dank.pw/exifscrubber"
+	"github.com/lyx0/yaf-dank.pw/fileexpiration"
 )
 
 const (

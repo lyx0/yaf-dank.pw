@@ -1,4 +1,4 @@
-module github.com/lyx0/yaf
+module github.com/lyx0/yaf-dank.pw
 
 go 1.20
 

@@ -1,10 +1,10 @@
 version: '3.9'
 services:
-    yaf:
-        image: yaf
+    dankpw:
+        image: dankpw
         volumes:
           - /path/to/filedir:/var/www/yaf
           - /path/to/your/yaf.conf:/app/yaf.conf
         ports:
-          - '127.0.0.1:4711:4711'
+          - '127.0.0.1:4712:4712'
 
