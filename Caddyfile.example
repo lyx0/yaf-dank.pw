@@ -1,0 +1,7 @@
+yaf.example.com {
+    root * /path/to/filedir/
+    file_server
+
+    reverse_proxy /upload localhost:4711
+    reverse_proxy /uploadweb localhost:4711
+}

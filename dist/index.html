@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>yaf - yet another fileshare</title>
+    <meta property="og:title" content="yaf - yet another (temporary) fileshare">
+    <meta property="og:description" content="a (temporary) place for your screenshots">
+    <meta property="og:image" content="https://yaf.ee/og.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<pre>
+yaf.ee - yet another (temporary) fileshare
+- all uploads will be deleted after 7 days
+- maximum file size is 50Mb
+
+</pre>
+<form action="https://i.yaf.ee/uploadweb" method="post" enctype="multipart/form-data" >
+  <div>
+    <input type="file" id="file" name="file" />
+    <button>Upload</button>
+  </div>
+</form>
+<pre>
+
+from your terminal as POST: 
+  $ curl -L -F "file=@/home/noury/xd.txt" i.yaf.ee/upload
+
+from chatterino:
+  Request URL: https://i.yaf.ee/upload
+  Form field: file
+  leave the rest empty
+
+from dankchat:
+  Upload url: https://i.yaf.ee/upload
+  Form field: file
+  leave the rest empty
+
+from sharenix:
+  "Services": [
+    {
+      "Name": "i.yaf.ee",
+      "RequestType": "POST",
+      "RequestURL": "https://i.yaf.ee/upload",
+      "FileFormName": "file"
+    }
+  ]
+
+--------------------------------------------------------------------------------------
+i tried to build this site as a minimalistic image host that auto deletes all files
+after 7 days so that i don't have to stumble on cringy screenshots from years ago.
+
+terms of service:
+1. you agree that this is beautiful web design.
+2. do not upload anything that is either:
+  2.1 illegal in luxembourg.
+  2.2 will annoy my hosting provider buyvm.net
+
+this site and its storage are hosted by <a href="https://buyvm.net"/>https://buyvm.net</a> in a datacenter located in luxembourg.
+--------------------------------------------------------------------------------------
+if you need to contact me or want your file removed send an email to noury[at]noury.cc
+source: <a href="https://github.com/lyx0/yaf">https://github.com/lyx0/yaf</a>
+</pre>
+</html>
